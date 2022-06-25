@@ -1,0 +1,3 @@
+*.gpx
+bin/
+.env
