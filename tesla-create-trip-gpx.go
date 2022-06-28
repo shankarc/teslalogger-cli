@@ -116,12 +116,12 @@ func getPosIDs(fromDate, toDate time.Time) (int, int) {
 		// If date is after fromDate and not after toDate:
 		if date_time.After(fromDate) {
 			if date_time.After(toDate) {
-				endPosid = posid
 				break
 			}
 			if startPosid == 0 {
 				startPosid = posid
 			}
+			endPosid = posid
 		}
 
 	}
